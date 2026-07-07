@@ -11,16 +11,21 @@
    (hoặc sau này merge code vào nhánh `main` thì để `main`).
 5. Bấm **Deploy** → chờ ~2 phút → website chạy tại `https://<tên-project>.vercel.app`.
 
-## Bước 2 — Cấu hình biến môi trường (CRM)
+## Bước 2 — Nối lead về CRM nội bộ (Supabase của hệ thống Dr Tuấn Hùng App)
 
-Trong project Vercel → **Settings → Environment Variables**, thêm:
+**2a. Tạo bảng nhận lead (làm 1 lần):**
+1. Mở **Supabase Dashboard** của hệ thống nội bộ → **SQL Editor**
+2. Dán toàn bộ nội dung file `supabase/website_leads.sql` (trong repo `Dr-Tuan-Hung---App`) → **Run**
 
-| Tên | Giá trị | Ghi chú |
-|---|---|---|
-| `CRM_WEBHOOK_URL` | endpoint webhook của CRM | Lead từ form sẽ tự đẩy về CRM |
-| `CRM_API_KEY` | API key của CRM (nếu có) | Tuỳ chọn |
+**2b. Khai báo biến môi trường trên Vercel** (Settings → Environment Variables):
+
+| Tên | Lấy ở đâu |
+|---|---|
+| `SUPABASE_URL` | Supabase Dashboard → Settings → API → Project URL |
+| `SUPABASE_SERVICE_ROLE_KEY` | Supabase Dashboard → Settings → API → `service_role` ⚠️ giữ kín |
 
 Sau khi thêm biến → **Deployments → Redeploy** để áp dụng.
+Lead từ form sẽ ghi thẳng vào bảng `website_leads` — nhân sự đăng nhập app nội bộ là thấy.
 Khi chưa cấu hình, lead vẫn được ghi ở **Vercel → Logs** (không mất dữ liệu).
 
 ## Bước 3 — Trỏ domain drtuanhung.vn
