@@ -125,6 +125,9 @@ export default function Footer() {
 
         <p className="border-t border-gold/10 py-6 text-center text-xs text-muted">
           © {new Date().getFullYear()} Thẩm Mỹ Dr Tuấn Hùng — Hồ sơ năng lực &amp; thông tin hợp tác y khoa.
+          <span className="mt-1 block text-[10px] text-muted/60">
+            3D sculpture assets generated with Meshy AI (CC BY 4.0)
+          </span>
         </p>
       </div>
     </footer>
