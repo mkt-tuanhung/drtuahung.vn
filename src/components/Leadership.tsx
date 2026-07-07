@@ -21,6 +21,7 @@ export default function Leadership() {
             <div className="absolute -inset-3 rounded-xl border border-gold/40" />
             <ImagePlaceholder
               label="Ảnh chân dung Dr. Tuấn Hùng trong trang phục phẫu thuật — thần thái uy tín, tận tâm"
+              src="/images/chan-dung-dr-tuan-hung.jpg"
               className="aspect-[3/4]"
             />
           </div>

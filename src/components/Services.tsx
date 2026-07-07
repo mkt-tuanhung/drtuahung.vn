@@ -68,10 +68,12 @@ export default function Services() {
             <div className="mt-6 flex flex-1 flex-col gap-4">
               <ImagePlaceholder
                 label="Ảnh ekip phẫu thuật Dr. Tuấn Hùng tập trung cao độ trong phòng mổ hiện đại"
+                src="/images/ekip-phau-thuat.jpg"
                 className="min-h-36 flex-1"
               />
               <ImagePlaceholder
                 label="Ảnh bác sĩ tư vấn vẽ định hình form ngực cá nhân hoá bằng iPad công nghệ cao"
+                src="/images/tu-van-ipad.jpg"
                 className="min-h-36 flex-1"
               />
             </div>

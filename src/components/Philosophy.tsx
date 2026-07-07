@@ -40,6 +40,7 @@ export default function Philosophy() {
             <div className="mt-8">
               <ImagePlaceholder
                 label="Ảnh kết quả thực tế: vùng bụng thon gọn chuẩn điêu khắc cơ thể"
+                src="/images/ket-qua-body-art.jpg"
                 className="aspect-video"
               />
             </div>
@@ -61,6 +62,7 @@ export default function Philosophy() {
           <Reveal delay={0.15} className="order-1 lg:order-2">
             <ImagePlaceholder
               label="Ảnh kết quả nâng mông đầy đặn bằng mỡ tự thân + phác thảo định hình y khoa"
+              src="/images/ket-qua-cay-mong.jpg"
               className="aspect-[4/3]"
             />
           </Reveal>
