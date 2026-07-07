@@ -36,8 +36,16 @@ const ADVANTAGES = [
 export default function Technique() {
   return (
     <section id="technique" className="relative scroll-mt-20 overflow-hidden py-24">
-      {/* Nền phòng phẫu thuật: gradient chiều sâu + vệt đèn mổ */}
+      {/* Nền: ảnh chìm ca phẫu thuật thật + gradient chiều sâu + vệt đèn mổ */}
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-noir-950 via-noir-900 to-noir-950" />
+      {/* eslint-disable-next-line @next/next/no-img-element */}
+      <img
+        src="/images/phau-thuat-tap-trung.jpg"
+        alt=""
+        aria-hidden
+        className="absolute inset-0 -z-10 h-full w-full object-cover opacity-20"
+      />
+      <div className="absolute inset-0 -z-10 bg-gradient-to-b from-noir-950/80 via-transparent to-noir-950/90" />
       <div className="pointer-events-none absolute left-1/2 top-0 -z-10 h-[60vmin] w-[90vmin] -translate-x-1/2 rounded-full bg-[radial-gradient(ellipse_at_top,rgba(249,246,240,0.09)_0%,transparent_60%)]" />
 
       <div className="container mx-auto px-4 sm:px-8 lg:px-16">

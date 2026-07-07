@@ -26,23 +26,20 @@ npm run build    # build production
 | `public/models/bust.glb` | Tượng điêu khắc (section Body Art) — thay bằng model AI (Meshy/Tripo3D) khi có |
 | `src/components/three/` | Toàn bộ scene 3D: HeroSkullCanvas, JawExplorerCanvas, SculptureCanvas |
 
-## Thay ảnh thật — KHÔNG cần sửa code
+## Ảnh thật — ĐÃ tích hợp đầy đủ (17 ảnh)
 
-Thả file ảnh (JPG, tối ưu < 500KB/ảnh) vào thư mục `public/images/` với **đúng tên** dưới đây → push → ảnh tự thay shimmer:
+Toàn bộ ảnh do đối tác cung cấp, đã nén tối ưu (44–191KB/ảnh) trong `public/images/`.
+Muốn thay ảnh nào: ghi đè file cùng tên → push. Muốn thêm vị trí mới: sửa component tương ứng.
 
-| Tên file | Vị trí trên web | Nội dung ảnh |
-|---|---|---|
-| `chan-dung-dr-tuan-hung.jpg` | Lãnh đạo chuyên môn | Chân dung Dr. Tuấn Hùng (dọc 3:4) |
-| `ekip-phau-thuat.jpg` | Dịch vụ mũi nhọn | Ekip trong phòng mổ (ngang) |
-| `tu-van-ipad.jpg` | Dịch vụ mũi nhọn | Bác sĩ tư vấn vẽ form ngực bằng iPad (ngang) |
-| `ket-qua-body-art.jpg` | Triết lý — Body Art | Vùng bụng thon gọn (ngang 16:9) |
-| `ket-qua-cay-mong.jpg` | Triết lý — Cấy mông | Kết quả + phác thảo y khoa (ngang 4:3) |
-| `mau-vay-ren-kem.jpg` | Thư viện | Mẫu váy ren kem (dọc 3:4) |
-| `mau-suon-xam.jpg` | Thư viện | Mẫu sườn xám xanh ngọc + ô giấy dầu (dọc 3:4) |
-| `ket-qua-nang-nguc.jpg` | Thư viện | Kết quả nâng ngực không dẫn lưu (vuông) |
-| `ket-qua-voc-dang.jpg` | Thư viện | Khách sau điêu khắc vóc dáng (dọc 3:4) |
-| `kham-lam-sang.jpg` | Thư viện | Bác sĩ khám lâm sàng (vuông) |
-| `phong-kham.jpg` | Thư viện | Không gian phòng khám (dọc 3:4) |
+| Tên file | Vị trí trên web |
+|---|---|
+| `chan-dung-dr-tuan-hung.jpg` | Lãnh đạo chuyên môn (đã crop 3:4, nền đen) |
+| `ekip-phau-thuat.jpg`, `tu-van-ipad.jpg` | Dịch vụ mũi nhọn |
+| `phau-thuat-tap-trung.jpg` | Nền chìm section Kỹ thuật đột phá |
+| `ket-qua-body-art.jpg`, `ket-qua-cay-mong.jpg` | Triết lý sắc đẹp |
+| `mau-vay-ren-kem.jpg`, `mau-suon-xam.jpg`, `mau-vest-do.jpg`, `mau-cuc-hoa-mi.jpg`, `mau-vay-vang.jpg` | Thư viện — chân dung mẫu |
+| `ket-qua-nang-nguc.jpg`, `ket-qua-got-ham-truot-cam.jpg`, `ket-qua-got-ham-ha-go-ma.jpg` | Thư viện — kết quả |
+| `kham-lam-sang.jpg`, `tham-kham-truc-tiep.jpg`, `phong-kham.jpg` | Thư viện — chuyên môn & cơ sở |
 
 ## Form lead → CRM
 

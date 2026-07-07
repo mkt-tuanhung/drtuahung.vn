@@ -3,12 +3,17 @@ import SectionHeading from "./ui/SectionHeading";
 import ImagePlaceholder from "./ui/ImagePlaceholder";
 
 const ITEMS = [
-  { label: "Ảnh chân dung mẫu: vẻ đẹp thanh lịch trong váy ren màu kem quý phái", src: "/images/mau-vay-ren-kem.jpg", ratio: "aspect-[3/4]" },
-  { label: "Ảnh chân dung mẫu: sườn xám thêu hoa xanh ngọc lục bảo bên ô giấy dầu", src: "/images/mau-suon-xam.jpg", ratio: "aspect-[3/4]" },
-  { label: "Ảnh kết quả nâng ngực không ống dẫn lưu", src: "/images/ket-qua-nang-nguc.jpg", ratio: "aspect-square" },
-  { label: "Ảnh khách hàng sau điêu khắc vóc dáng", src: "/images/ket-qua-voc-dang.jpg", ratio: "aspect-[3/4]" },
-  { label: "Ảnh bác sĩ Tuấn Hùng khám lâm sàng", src: "/images/kham-lam-sang.jpg", ratio: "aspect-square" },
-  { label: "Ảnh không gian phòng khám chuẩn y khoa", src: "/images/phong-kham.jpg", ratio: "aspect-[3/4]" },
+  { label: "Vẻ đẹp thanh lịch trong váy ren màu kem quý phái", src: "/images/mau-vay-ren-kem.jpg", ratio: "aspect-[3/4]" },
+  { label: "Kết quả nâng ngực không ống dẫn lưu", src: "/images/ket-qua-nang-nguc.jpg", ratio: "aspect-square" },
+  { label: "Vẻ đẹp kiêu kỳ trong sườn xám thêu hoa xanh ngọc bên ô giấy dầu", src: "/images/mau-suon-xam.jpg", ratio: "aspect-[3/4]" },
+  { label: "Kết quả gọt hàm & trượt cằm — sau 03 tháng", src: "/images/ket-qua-got-ham-truot-cam.jpg", ratio: "aspect-square" },
+  { label: "Vẻ đẹp kiêu sa quyền lực", src: "/images/mau-vest-do.jpg", ratio: "aspect-[3/4]" },
+  { label: "Bác sĩ Tuấn Hùng tư vấn trên phim X-quang cấu trúc xương hàm mặt", src: "/images/kham-lam-sang.jpg", ratio: "aspect-square" },
+  { label: "Vẻ đẹp trong trẻo tựa cúc hoạ mi", src: "/images/mau-cuc-hoa-mi.jpg", ratio: "aspect-[3/4]" },
+  { label: "Kết quả gọt hàm & hạ gò má — sau 01 tháng", src: "/images/ket-qua-got-ham-ha-go-ma.jpg", ratio: "aspect-square" },
+  { label: "Vẻ đẹp quyến rũ ánh vàng", src: "/images/mau-vay-vang.jpg", ratio: "aspect-[3/4]" },
+  { label: "Bác sĩ Tuấn Hùng thăm khám trực tiếp", src: "/images/tham-kham-truc-tiep.jpg", ratio: "aspect-[3/4]" },
+  { label: "Không gian cơ sở y khoa được cấp phép", src: "/images/phong-kham.jpg", ratio: "aspect-[3/4]" },
 ];
 
 export default function Gallery() {
