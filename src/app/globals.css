@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background: linear-gradient(160deg, #061d18 0%, #0c2d26 45%, #061d18 100%);
+  background-attachment: fixed;
+}
+
+::selection {
+  background: rgba(197, 160, 89, 0.35);
+  color: #f9f6f0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #061d18;
+}
+::-webkit-scrollbar-thumb {
+  background: #1b4a3f;
+  border-radius: 8px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5a059;
+}
+
+@layer components {
+  .gold-text {
+    background: linear-gradient(100deg, #a8853f 0%, #e4c98a 35%, #c5a059 60%, #f0dfae 85%, #c5a059 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .gold-border {
+    border: 1px solid rgba(197, 160, 89, 0.45);
+  }
+
+  .shimmer-placeholder {
+    background: linear-gradient(
+      110deg,
+      rgba(18, 59, 50, 0.6) 30%,
+      rgba(197, 160, 89, 0.12) 50%,
+      rgba(18, 59, 50, 0.6) 70%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 2.4s linear infinite;
+  }
+
+  .card-premium {
+    @apply rounded-xl border border-gold/20 bg-noir-900/60 backdrop-blur-sm transition-all duration-500 ease-in-out;
+  }
+  .card-premium:hover {
+    @apply border-gold/70 shadow-gold-glow;
+    transform: scale(1.02);
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-gradient-to-r from-gold to-gold-bright px-6 py-3 font-sans text-sm font-semibold uppercase tracking-widest text-noir-950 shadow-gold-glow transition-all duration-500 ease-in-out;
+  }
+  .btn-gold:hover {
+    @apply brightness-110 shadow-gold-glow-lg;
+  }
+
+  .input-premium {
+    @apply w-full rounded-md border border-gold/40 bg-noir-950/70 px-4 py-3 text-cream placeholder-muted outline-none transition-colors duration-300 focus:border-gold focus:shadow-gold-glow;
+  }
+}
